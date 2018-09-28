@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block header-content %}
+	<div class="col-md-7 text-left">
+		<div class="display-t">
+			<div class="display-tc animate-box" data-animate-effect="fadeInUp">
+				<span class="date-post">1 day ago</span>
+				<h1 class="mb30"><a href="#">{{ post.title }}</a></h1>
+				<h2 class="mb30">{{ post.highlight }}</h2>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+{% block content %}
+<div class="col-md-12">
+	<article class="mt-negative">
+		<div class="text-left content-article">
+			<div class="row">
+				<div class="col-lg-8 cp-r animate-box fadeInUp animated-fast">
+					<p>{{ post.body }}</p>
+				</div>
+			</div>
+		</div>
+	</article>
+</div>
+{% endblock %}
